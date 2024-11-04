@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+    <html lang="en">
+        <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Pizzaland | Login</title>
+            <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+            <link href="Pizzaland.css" rel="stylesheet">
+        </head>
+        <body>
+            <div class="infoblok">
+            <table>
+                <tr>
+                    <td><img src="logo.png" alt="logo" class="logo"></td>
+                    <!--The "height" & "width" attributes control the size of-->
+                    <td><h1><em>PIZZALAND</em></h1></td>
+                </tr>
+            </table>
+    <p>Please login to order pizza</p> 
+            <form action="pizzaland.html" method="POST">     
+                <label for="username">Username:</label>
+                <input type="text" name="username" id="username" required minlength="3" maxlength="15" pattern="[a-zA-Z0-9]+">
+                <br>
+                <label for="user-pw">Password:</label>
+                <input id="user-pw" type="password" name="user-pw" required minlength="8" maxlength="15">
+                <br>
+                <input type="submit" value="Submit">
+            </form>
+            <!--Aaah too much info, or is there?-->
+            <!--Not really.-->
+            <!--These are FORMS and it's the hardest part of learning HTML, speaking about HTML, I nrever told you what HTML means, well HTML stands for HyperText Markup Language, HTML-->
+            <!--Back to forms, forms are a way to store data and submit it to another place to do something-->
+            <!--There are a lot of types of forms-->
+            <!--All of our data is stored in the "form" tag the "action" attribute says where the data will be sent, the "method" attribute is the way the data will be used and the "POST" atttibute will post our data-->
+            <!--The "label" tag is pretty much what it says it's a lebel for our input. The "for" attribute is also what it means it says to what input it's made for, the data unside "for" is the id of our input-->
+            <!--The "input" tag is where we put our data the "type" attribute says what kind of type is going to be your input, there are a lot of types, but here we have 2 "text" & "password"-->
+            <!--"text" is just an input to add text to our page fore examle "tomato13"-->
+            <!--"password" is the same but it's ""censored"" like "********"-->
+            <!--The "name" attribute is just the name of out page-->
+            <!--"minlength" & "maxlength" are the amount of characters you'll limit your input to-->
+            <!--The "pattern" attribute tells you what characters you can use-->
+            <!--and the "required" attribute, well, you guessed it! it forces you to fill an input-->
+        </div>
+        </body>
+</html>

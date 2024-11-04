@@ -1,0 +1,28 @@
+h1 {
+    font-family: pizzaria;
+}
+p, label, span, form {
+    font-family: pizzat;
+}
+
+body {
+    background-image: url(pizzaland-background.png);
+}
+
+* {
+    text-align: center;
+}
+
+hr {
+    color: black;
+}
+
+.infoblok {
+    background-color: rgb(253, 221, 132);
+    margin: 5%;
+    border-radius: 30px;
+}
+.logo {
+    height: 200px;
+    width: 200px;
+}

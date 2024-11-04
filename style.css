@@ -1,0 +1,137 @@
+/*Welcome to the CSS guide
+What does CSS stand for? It stands for "Cascading StyleSheets*/
+/*Css can be used to change the esthetics of an HTML page*/
+/*Now let's begin in guide.html, especifically on line 10*/             /*follow the arrow*/
+/*Differently from HTMl, CSS adds comment like ths: "/*"*//*and then you close them like this --->*/
+h1 {
+    color:violet !important;
+    font-family: cursive;
+    opacity: 0.75;
+    max-width: auto;
+    max-height: 50;
+    min-height: 30;
+    min-width: 30;
+    position: fixed;
+    top:0px;
+    left: 0px;
+}
+/*Now, I'll show you the parts of a CSS declaration*/
+/*
+ p {
+     color: green;
+ }
+Okay, here "p" is our selector, it targets what item we want to change its style
+"{
+   color: green;
+}
+all of that is our declaration block: the code that will change our values in HTML  
+color: green; 
+This is our declaration: the code that we'll apply to change our docs's style
+
+color: 
+That is the property: signifies what value of the object is going to change
+
+blue;
+That's The value of our property
+*/
+/*Now, back to line 6, we can see that we're targeting all h1 units in guide.html to be violet*/
+/*this !important thingy prioritises that over anything else on the stylesheet  */
+/*opacity changes the opacity*/
+/*max & min height and width establish limits between te selector. If our objects have a value not inside the range of max & min height and width they will be set up to the one that's closer*/
+/*Auto means automatically adjusted*/
+/*When you use fixed in your position the object will always show, no matter of the position you have in the page*/
+/*position can change the place your object is displayed*/
+/*you can use top bottom left or right to change the amount of pixels from your relative point*/
+.ironmaiden {
+    background-color: red;
+    color: white !important;
+    font-family: iron maiden;
+    padding: 15px 30px;
+    font-size: 30px;
+    margin: 15px;
+    /*If you read this it means that you already learnt about padding*/
+    /*when you change padding to only be in a single line we have it like this (This is called Shorthand)
+    padding: 15px 30px 52px 336px;
+    if there are 4 properties they go in this order: top, left, bottom, right.
+    if there are 3 properties they go in this order: top, sides, bottom.
+    if there are 2 properties they go in this order: bases, sides.
+    if there is 1 property it means all sides.*/
+    /*"background-color" changes the background color of your page/object*/
+    /*"color" changes the color of your text*/
+    /*"font-family" changes the font of your text, if you have a third-party font you can also use it*/
+    /*New element, margin! Margins are used to create space around elements, outside of any defined borders*/
+    /*you can also use shorthand with margin*/
+    }
+* {
+    border: 1px dotted chartreuse;
+}
+/*wat? when we use "*" we target every item in our html file*/
+/*When we want to put a border we put it in this order: size(#px), design, color;*/
+.headings {
+   color: wheat ;
+   text-align: center;
+}
+/*when you put a dot"." before anything it means that you're targeting the objects inside a class*/
+/*text-align suprisingly can align text*/
+#based {
+    color:crimson;
+    font-size: 25px;
+    padding-top:100px;
+    padding-bottom: 100px;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-image:url(obamium.png);
+}
+/*same as "." we use a hashtag "#" for when we use IDs*/
+/*font-size chenges our font size*/
+/*What is padding? Padding is the space between the content and the border of an element we can use padding and then put -top, -bottom, -left or -right to select an specific side of the padding*/
+a[href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"] {
+    color:tomato;
+    visibility: visible;
+    position: sticky;
+}
+/*when we target "a" but put our "href" we only target that especific tag*/
+/*visibility has three differnt types of uses: 
+visible: the element will render and fuction
+hidden: the element will not render but function
+collapse: the element will not render and won't function*/
+a:hover {
+    color:orangered;
+    font-weight: bold;
+}   
+/*when we use ":hover" we change the color of our selected object to ONLY be that color when you hover on it*/
+/*Font weight changes between different ways to design our text*/
+h6,.Россия{
+   font-family: chernobyl;
+   border: 5px solid royalblue;
+   border-radius: 4px;
+}
+/*when we want to put 2 or more items in one we can just separate them by a comma*/
+/*border-radius can make your border look more like a circled rectangle*/
+ul li{
+    color:aquamarine;
+}
+/*if theres no comma we actually are targeting all the items of the 2nd selector that are inside the 1st selector, in this case, we are targeting all the "li" in "ul"*/
+img[src*='obama.png']{
+    height:320px !important; 
+    width: 320px !important;
+    top: 300px;
+}
+/*as shown here img[src*='obama.png'] is our way to target an specific image*/
+/*the height and witdth properties change the height and width*/
+/*position can change the place your object is displayed*/
+/*you can use top bottom left or right to change the amount of pixels from your relative point*/
+.aaa {
+    overflow: scroll;
+}
+/*overflow helps you have different options to use when you cannot render something in the screen*/
+/*There are 3 types of overflow: 
+-scroll: If it can't be rendered, you can scroll to see it.
+-hidden: If it can't be rendered, you can only see the visible part, the rest will be removed.
+-visible: Similar to scroll but now the whole window becomes scrollable
+*/
+h2 {
+    position: sticky;
+    top: 20px;
+}
+/*When we use sticky it makes it possible to move your image as you scroll*/

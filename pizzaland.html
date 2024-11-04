@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizzaland | Order</title>
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link href="Pizzaland.css" rel="stylesheet">
+</head>
+<body>
+  <div class="infoblok">
+  <header>
+    <table>
+      <tr>
+        <td><img src="logo.png" alt="logo" class="logo"></td>
+        <td><h1><em>PIZZALAND</em></h1></td>
+      </tr>
+    </table>
+  </header> 
+  <!--The "header" tag is the top section of yah paige-->
+    <h1><em>PIZZALAND</em></h1> 
+  <aside>
+    <p>Order pizza in the best place to order pizza</p>
+  </aside>
+    <!--The "aside" tag is a semantic HTML tag that contains information that is related to the main content, but not required in order to understand the dominant information
+    similar to a "div" tag but more organised-->
+  <nav>
+    <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">This is how we make our pizzas (we don't use chicken feet) pizzaland.com/how-we-make-pizza</a>
+  </nav>
+  <!--The "nav" tag is normally used to navigate in your page-->
+  <article>
+    <p>Here at Pizzaland we make pizza</p>
+    <p>We don't pay our workers</p>
+    <p>We just buy our pizzas from Dominos</p>
+  </article> 
+  <!--"article" adds articles-->
+    <form action="pizzawait.html" method="POST">
+        <h1>Welcome to Pizzaland</h1>
+<main>        
+<!--"main" is the body of the body of the page-->
+<section class="slices">
+  <label for="amount">How many slices would you like?</label>
+  <input type="number" name="amount" id="amount">
+  <!--We already know about inputs so know we will toy a bit with them-->
+  <!--the "number" value changes your input to an ONLY numerical input-->
+</section>
+<!--"section" is just a section... Nothing special-->
+<hr>
+
+<section class="speed">
+  <label for="speed">How fast do you want us tou bring your pizza</label>
+  <br>
+  <span>Slow (3 years(Free!))</span>
+  <input type="range" name="speed" id="speed" value="3" min="0" max="5" step="0.5">
+  <span>Fast (2 years & 11 months(999 trillion dollar fee!))</span>
+  <!--the "range" value nurns it to a slider, "value" is the starting value, "min & max" are the limits, and "step" is how many steps to get to one side another -->
+</section>
+<hr>
+
+<section class="toppings">
+  <span>What toppings would you like?</span>
+  <br>
+  <input type="checkbox" name="topping" id="pepperoni" value="pepperoni">
+  <label for="pepperoni">Pepperoni</label>
+  <input type="checkbox" name="topping" id="olives" value="olives">
+  <label for="olives">Olives</label>
+  <input type="checkbox" name="topping" id="Italy's mafia will kill us" value="Italy's mafia will kill us" required>
+  <label for="Italy's mafia will kill us">Pineapple (My teacher is forcing me 😢)</label>
+  <!--"checkbox" adds a checkable box-->
+</section>
+<hr>
+
+<section class="cheesy">
+  <span>Would you like to add cheese?</span>
+  <br>
+  <input type="radio" name="cheese" id="yes" value="yes">
+  <label for="yes">Yes</label>
+  <input type="radio" name="cheese" id="no" value="yes">
+  <label for="no">No. Sinner.</label>
+  <!--similar to "checkbox" "radio" adds a checkable circle but you can only choose one-->
+</section>
+<hr>
+
+<section class="soda">
+  <label for="soda">What soda do you want us to bring to your IP adress? <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank">Click here to know your IP adress</a></label>
+  <br>
+  <select name="soda" id="soda">
+    <option value="coke">Coke</option>
+    <option value="Coke">Coke</option>
+    <option value="pepsi">Coke (not Pepsi)</option>
+  </select>
+  <!--"select" adds a list where you can select the items-->
+  <!--"option" lets you add the options you want to add to your list-->
+</section>
+<hr>
+
+<section class="sauce-selection">
+  <label for="sauce">What type of sauce would you like?</label>
+  <input list="sauces" id="sauce" name="sauce">
+  <datalist id="sauces">
+    <option value="Pesto"></option>
+    <option value="Tomatoe"></option>
+    <option value="Ketchup (you die)"></option>
+  </datalist>
+  <!--"datalist" is similar to "select" but now you can use text as options as well. "value" is the name that will show on the screen-->
+</section>
+<hr>
+<section class="extra-info">
+  <label for="extra">Anything else you want to add? (no drugs please!)</label>
+  <br>
+  <textarea id="extra" name="extra" rows="3" cols="40"></textarea>
+  <!--"textarea" is like the text input but you can add way more text-->
+  <!--"rows" shows how many rows it displays by default, same with "cols" but with columns-->
+</section>
+<hr>
+<footer>
+<label for="home">Where do you live (We are not giving this info to give it to the Italian mafia to go kill you)</label>
+<br>
+<input type="text" name="home" id="home" required>
+<hr>
+</main>
+<section class="submission">
+  <input type="submit" value="Submit">
+<!--this last input: "submit" gets all your data in the past forms and sends it to the page the data is supposed to be sent-->
+</section>
+</footer>
+<!--"footer" is the last item here, it indicades the bottom of the page-->
+</form>
+</div>
+</body>
+</html>
